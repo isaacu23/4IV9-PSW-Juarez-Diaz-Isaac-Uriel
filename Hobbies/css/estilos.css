@@ -1,0 +1,315 @@
+  
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+*{
+  margin: 1;
+  padding: 1;
+}
+
+nav {
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #0f0c0fb6;
+}
+
+body{
+     background-color: #1f1724;
+
+}
+
+
+
+.container span {
+  font-size: 160pt;
+  font-weight: bold;
+  position: relative;
+  font-family: "Comic Sans";
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+}
+
+
+
+.container span::before {
+  content: var(--l);
+  position: absolute;
+  transform: scale(1.1);
+  filter: blur(15px);
+}
+
+
+
+.container span::after {
+  content: var(--l);
+  position: absolute;
+  height: 200%;
+  width: 300px;
+  top: 80%;
+  left: 0;
+  filter: blur(30px);
+  transform: rotateX(50deg);
+}
+
+
+
+
+.container span:hover {
+  filter: contrast(250%);
+}
+
+.container span:nth-child(1) {
+  color: #03b83f;
+}
+
+.container span:nth-child(2) {
+  color: #089ef5;
+}
+
+.container span:nth-child(3) {
+  color: #08f51c;
+}
+
+.container span:nth-child(4) {
+  color: #12d132;
+}
+
+.container span:nth-child(5) {
+  color: #ffb648;
+}
+
+.container span:nth-child(6) {
+     color: #eb2323;
+}
+
+.container span:nth-child(7) {
+     color: #ec0a0a;
+}
+
+
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(2, 32, 199);
+    height: auto;
+    width: 100vw;
+    font-family: "Courier New";
+    padding-top: 40px;
+    color: rgb(0, 0, 0);
+}
+
+
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+
+
+.socials li{
+    margin: 0 10px;
+}
+
+
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+
+
+
+.socials a:hover i{
+    color: rgb(130, 202, 202);
+}
+
+
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+
+
+article{
+    background-color: #0042a546;
+    height: 1200px;
+    width: auto;
+    display: grid;
+    place-items: center center;
+    font-family: 'Patronum',sans-serif;
+}
+
+
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    padding: 30px;
+    grid-gap: 40px;
+}
+
+
+
+.card{
+    background-color: #2f073398;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(233, 7, 184, 0.801);
+}
+
+
+
+.container{
+    position: relative;
+    clip-path: polygon(0 0,100% 0, 100% 100%, 0 100%);
+}
+
+
+
+img{
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+
+
+
+.container:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.7;
+}
+
+
+
+.card1>.container:after{
+    background-image: linear-gradient(
+        100deg,
+        #0100ec,
+        #fb36f4
+    );
+}
+
+
+
+.card2>.container:after{
+    background-image: linear-gradient(
+        100deg,
+        #a71db4,
+        #571057
+    );
+}
+
+
+
+.card3>.container:after{
+    background-image: linear-gradient(
+        100deg,
+        #1dffa8,
+        #0b0255
+    );
+}
+
+
+
+.card4>.container:after{
+    background-image: linear-gradient(
+        100deg,
+        #e03b3b,
+        #ba1cf8
+    );
+}
+
+
+
+.details{
+    padding: 20px 10px;
+}
+
+
+
+.details>h3{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0 15px 0;
+}
+
+
+
+.details>p{
+    color: #a0a0a0;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+}
