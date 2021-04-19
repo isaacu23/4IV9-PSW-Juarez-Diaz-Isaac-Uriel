@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Estilos.css">
+    <script src="js/Problema5.js"></script>
+    <title>Problema 5</title>
+    <link rel="shortcut icon" type="image/x-icon">
+</head>
+
+
+<body bgcolor="green">
+    
+        <header>
+            <a href="index.html">
+                <h1>Inicio</h1>
+            </a>
+        </header>
+
+
+        <form method="get" name="formulario" action="p5.html">
+
+            <br>
+
+            <center><h2>Problema 5</h2></center>
+
+            <table align="center">
+                <tr>
+                    <td class="col_iz">Ingrese el numero de hombres que hay</td>
+                    <td class="col_de"><input class="cam_textE" type="text" name="hombres" onkeypress="return validarInt(event)"></td>
+                </tr>
+
+
+                <tr>
+                    <td class="col_iz">Ingrese el numero de mujeres que hay</td>
+                    <td class="col_de"><input class="cam_textE" type="text" name="mujeres" onkeypress="return validarInt(event)"></td>
+                </tr>
+
+
+                <tr>
+                    <td></td>
+                    <td class="col_de"> <input class="boton" type="button" name="enviar" value="Calcular" onclick="calcular()"> </td>
+                </tr>
+
+
+                <tr>
+                    <td class="col_iz">El porcentaje de hombres que hay es:</td>
+                    <td class="col_de"><input class="cam_textI" type="text" name="porcentajeH" readonly="readonly"></td>
+                </tr>
+
+
+                <tr>
+                    <td class="col_iz">El porcentaje de mujeres que hay es:</td>
+                    <td class="col_de"><input class="cam_textI" type="text" name="porcentajeM" readonly="readonly"></td>
+                </tr>
+
+
+                <tr>
+                    <td></td>
+                    <td class="col_de"><input class="boton" type="button" name="borrarC" value="Borrar" onclick="borrar()"></td>
+                </tr>
+
+
+            </table>
+
+        </form>
+
+
+    </div>
+    <br>
+    <br>
+
+
+    <footer class="footer">
+        <div class="row">
+            <div class="footer-col">
+               
+            </div>
+
+        </div>
+    </footer>
+
+    
+</body>
+
+</html>

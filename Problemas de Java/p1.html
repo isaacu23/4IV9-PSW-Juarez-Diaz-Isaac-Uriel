@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Estilos.css">
+    <script src="js/Problema1.js"></script>
+    <title>Problema 1</title>
+    <link rel="shortcut icon"  type="image/x-icon">
+</head>
+
+<body bgcolor="Green">
+    
+    <div class="Conter">
+        <header>
+            <a href="index.html">
+                <center><h1>Inicio</h1></center>
+            </a>
+        </header>
+        <form method="get" name="formulario" action="p1.html">
+           <center> <h2>Problema 1</h2></center>
+            <table align="center">
+                <tr>
+                    <td class="col_iz">Introduce la cantidad que deseas invertir:</td>
+                    <td class="col_de"><input class="cam_textE" type="text" name="cantidad" onkeypress="return validar(event)"></td>
+                </tr>
+
+
+                <tr>
+                    <td></td>
+                    <td class="col_de"> <input class="boton" type="button" name="enviar" value="Calcular" onclick="interes()"></td>
+                </tr>
+
+
+                <tr>
+                    <td class="col_iz">El dinero que ganaras despues de un mes es:</td>
+                    <td class="col_de"><input class="cam_textI" type="text" name="total" readonly="readonly"></td>
+                </tr>
+
+
+                <tr>
+                    <td></td>
+                    <td class="col_de"><input class="boton" type="button" name="borrarC" value="Borrar" onclick="borrar()"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <br>
+    <br>
+
+
+    <footer class="footer">
+        <div class="row">
+            <div class="footer-col">
+        
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+
+</html>
