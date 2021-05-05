@@ -1,0 +1,42 @@
+.body1{
+
+     background-color: rgb(45, 214, 30 );
+}
+
+
+.container{
+     background-color: rgb(243, 156, 18);
+     padding: 2rem;
+     text-align: center;
+     white-space: nowrap;
+    width: 1200px;
+    height: 700px;
+    border: 250px solid #2dd61e;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+.body2{
+     background-color: rgb(87, 156, 216);
+     padding: 2rem;
+     text-align: center;
+    width: 1270px;
+    border: 1px solid #df1616;
+    text-overflow: ellipsis;
+    align-items: center;
+}
+
+
+
+
+.body3{
+     background-color: rgb(87, 156, 216);
+     padding: 2rem;
+     text-align: center;
+    width: 1270px;
+    border: 1px solid #2dd61e;
+    text-overflow: ellipsis;
+    align-items: center;
+}

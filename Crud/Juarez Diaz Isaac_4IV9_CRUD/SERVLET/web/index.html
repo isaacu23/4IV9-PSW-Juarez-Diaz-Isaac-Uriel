@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Registro de Usuarios</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/validar.js"></script>
+    </head>
+
+
+    <body class="body1">
+        <div class="container" >
+            <div class="contenedorRegistro" >
+                <form method="post" name="formulario" 
+                      action="Registro">
+                    <label>Nombre: </label>
+                    <br>
+                    <input type="text" name="nombre" onkeypress="return validarabc(event)">
+                    <br>
+                    <label>Apellido Paterno: </label>
+                    <br>
+                    <input type="text" name="appat" onkeypress="return validarabc(event)">
+                    <br>
+                    <label>Apellido Materno: </label>
+                    <br>
+                    <input type="text" name="apmat" onkeypress="return validarabc(event)">
+                    <br>
+                    <label>Edad: </label>
+                    <br>
+                    <input type="number" name="edad" onkeypress="return validarn(event)">
+                    <br>
+                    <label>Email: </label>
+                    <br>
+                    <input type="email" name="correo" >
+                    <br>
+                    <br>
+                    <input type="submit" value="Registrar Usuario" class="buttom">
+                    <input type="reset" value="Borrar Datos" class="buttom"> 
+                </form>
+            </div>
+
+            
+
+                <br>
+            <div class="contenedorConsultar" >
+                <br>
+                <form name="formularioConsultar" method="get" action="Consultar" >
+                <input type="submit" value="Consultar Tabla General de Usuarios" class="buttom">
+                </form>
+            </div>
+
+
+
+                <br>
+                <div class="contenedorEliminar" >
+                    <br>
+                <form name="formularioEliminar" method="post" action="Eliminar">
+                <label>Inserte el id que quiera borrar</label>
+                <input type="text" name="ideliminar" id="bloquearf" onkeypress="return validarn(event)">
+                <input type="submit" value="Eliminar Registro" class="buttom">
+                </form>
+                </div>
+
+
+
+                <br>
+                <div class="contenedorActualizar" >
+                     <form name="formularioEliminar" method="post" action="Modificar">
+                        
+                    <label>Inserte el id que quiere modifcar</label>
+                    <input type="text" name="idmodificar" onkeypress="return validarn(event)">
+                    <input type="submit" value="Modificar Registro" class="buttom">
+                    </form>
+                </div>
+        </div>
+    </body>
+</html>
